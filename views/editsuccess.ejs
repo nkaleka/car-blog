@@ -1,0 +1,14 @@
+<%- include('layouts/header'); -%> <%- include('layouts/nav'); -%>
+
+<main>
+  <p id="formResult">Post updated Successfully</p>
+
+  <h2><%=title%></h2>
+  <h2><%=userName%></h2>
+  <p><%=date%></p>
+  <p>
+    <img class="postPageImage" src="/Images/posts/<%= image%>" />
+  </p>
+  <%-content%>
+</main>
+<%- include('layouts/footer'); -%>

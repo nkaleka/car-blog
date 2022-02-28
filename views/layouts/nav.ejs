@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <% for(var i=0; i < blogs.length; i++) { %>
+    <li><a href="/posts/<%= blogs[i].slug%>"><%= blogs[i].title %></a></li>
+    <% } %>
+    <li><a href="/allposts">AllPosts</a></li>
+    <li><a href="/add">AddPage</a></li>
+  </ul>
+</nav>

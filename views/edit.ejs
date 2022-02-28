@@ -1,0 +1,37 @@
+<%- include('layouts/header'); -%>
+  <%- include('layouts/nav'); -%>
+
+  <main>
+    <form name="myform" method="Post" action="" enctype="multipart/form-data">
+      <div class="field">
+        <label for="name">Name of User:</label>
+        <input type="text" id="name" name="userName" value="<%=blog.userName%>"/>
+      </div>
+      <div class="field">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="<%=blog.date%>"/>
+      </div>
+      <div class="field">
+        <label for="title">Post Title:</label>
+        <input type="text" id="title" name="title" value="<%=blog.title%>"/>
+      </div>
+      <div class="field">
+        <label for="slug">Post slug:</label>
+        <input type="text" id="slug" name="slug" value="<%=blog.slug%>" />
+      </div>
+      <div class="editpageimage">
+        <label for="postImage">Image:</label>
+        <img src="/Images/posts/<%=blog.image%>"/></br>
+        </div>
+      <div class="field">
+        <label for="postImage">Update Image:</label>
+       <input type="file" class="form-input" name="postImage"/>
+      </div>
+      <div class="field">
+        <label for="content">Content:</label>
+        <textarea name="content" id="content" cols="20" rows="5"><%-blog.content%></textarea>
+      </div>
+      <input type="submit" value="Update" class="button" />
+    </form>
+  </main>
+  <%- include('layouts/footer'); -%>

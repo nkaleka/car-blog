@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+header img {
+  width: 150px;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+header h1 {
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.button {
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+  background: #8b0000;
+  border: 2px solid black;
+}
+
+nav ul {
+  background-color: darkred;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgba(175, 216, 25, 0.932);
+}
+
+main {
+  padding: 2rem;
+  padding-bottom: 40px;
+}
+
+.field label {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  padding: 2px;
+  margin: 10px;
+}
+
+.field input {
+  width: 176px;
+  line-height: 25px;
+  padding: 2px;
+  margin: 5px;
+}
+
+textarea {
+  width: 180px;
+  margin-bottom: 2rem;
+}
+
+.button input {
+  padding: 10px;
+  color: #ffffff;
+  background-color: darkred;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: darkred;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*login page CSS*/
+.login label {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+  padding: 2px;
+  margin: 10px;
+}
+
+.login input {
+  width: 176px;
+  line-height: 25px;
+  padding: 2px;
+  margin: 5px;
+}
+
+.loginbutton input {
+  padding: 10px;
+  color: #ffffff;
+  background-color: darkred;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* edit page*/
+.editpageimage img {
+  width: 176px;
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+.editpageimage label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+/*post page*/
+.postPageImage {
+  width: 70%;
+}
+
+/*allposts page*/
+.allPostsPageLogOut {
+  text-decoration: none;
+  border: 2px solid black;
+  margin-left: 20px;
+  padding: 5px;
+  background: #8b0000;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+}
+
+.allPostsPageBorder {
+  border-spacing: 0;
+}
+
+.allPostsPageBorder th,
+.allPostsPageBorder td {
+  padding: 1rem;
+  border: 1px solid #000;
+  background-color: #ccc;
+}
+
+.allPostsPageBorder td {
+  padding: 1rem;
+  border: 0.5px solid #000;
+  background-color: #ddd;
+}
+
+.logoutButton {
+  text-align: end;
+}

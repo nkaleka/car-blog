@@ -1,0 +1,30 @@
+<%- include('layouts/header'); -%> <%- include('layouts/nav'); -%>
+<main>
+  <p class="logoutButton">
+    <a class="allPostsPageLogOut" href="/logout">Logout</a>
+  </p>
+
+  <table class="allPostsPageBorder">
+    <thead>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Title</th>
+      <!--<th>Content</th>-->
+      <th>Delete</th>
+      <th>Edit</th>
+    </thead>
+    <tbody>
+      <% for(var blog of blogs) { %>
+      <tr>
+        <td><%=blog.userName%></td>
+        <td><%=blog.date%></td>
+        <td><%=blog.title%></td>
+        <!--<td><%=blog.content%></td>-->
+        <td><a href="/delete/<%= blog.slug%>">Delete</a></td>
+        <td><a href="/edit/<%= blog.slug%>">Edit</a></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</main>
+<%- include('layouts/footer'); -%>

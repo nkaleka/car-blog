@@ -1,0 +1,36 @@
+<%- include('layouts/header'); -%> <%- include('layouts/nav'); -%>
+
+<main>
+  <h1>Please enter the following inputs for the Car you like:</h1>
+  <form name="myform" method="Post" action="" enctype="multipart/form-data">
+    <!-- <img src="Images/logo.jpg" alt="car image" />-->
+    <div class="field">
+      <label for="name">Name of User:</label>
+      <input type="text" id="name" name="userName" />
+    </div>
+    <div class="field">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" />
+    </div>
+    <div class="field">
+      <label for="title">Post Title:</label>
+      <input type="text" id="title" name="title" />
+    </div>
+    <div class="field">
+      <label for="slug">Post slug:</label>
+      <input type="text" id="slug" name="slug" />
+    </div>
+    <div class="field">
+      <label for="postImage">Image:</label>
+      <input type="file" class="form-input" name="postImage" />
+    </div>
+    <div class="field">
+      <label for="content">Content:</label>
+      <textarea name="content" id="content"></textarea>
+    </div>
+    <div class="button">
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</main>
+<%- include('layouts/footer'); -%>
